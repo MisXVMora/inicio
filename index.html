@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 - Mora</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/787878/crown.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Pinyon+Script&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="fecha-top">9 DE MAYO DE 2026</p>
+            <h1>Mora</h1>
+            <p class="subtitle">Se acerca mi noche...</p>
+        </div>
+    </header>
+
+    <section class="contador-section">
+        <h2>FALTAN...</h2>
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Días</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fiesta-section">
+        <h2>¡FIESTA!</h2>
+        <p class="lugar">Salon Tomas</p>
+        <p class="direccion">Estrada 2306, Villa Maipu</p>
+        <p class="hora">20:00 hs</p>
+        <a href="https://www.google.com/maps/place/Sal%C3%B3n+Tom%C3%A1s/@-34.5700152,-58.5237232,21z/data=!4m15!1m8!3m7!1s0x95bcb70e4f429c83:0xa1e7a531f42b7f5!2sEstrada+2306,+B1650+Villa+Maip%C3%BA,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.5700192!4d-58.5236064!16s%2Fg%2F11fkds5xpp!3m5!1s0x95bcb70e4f14462d:0xae395aa1b98a62cb!8m2!3d-34.5700192!4d-58.5236074!16s%2Fg%2F1q62h_3sw?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank" rel="noopener noreferrer">CÓMO LLEGAR</a>
+    </section>
+
+    <section class="galeria">
+        <div class="galeria-container">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.09 (1).jpeg" alt="Foto 1">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.09.jpeg" alt="Foto 2">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.10 (1).jpeg" alt="Foto 3">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.10 (2).jpeg" alt="Foto 4">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.10 (3).jpeg" alt="Foto 5">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.10.jpeg" alt="Foto 6">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.11 (1).jpeg" alt="Foto 7">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.11 (2).jpeg" alt="Foto 8">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.37.11.jpeg" alt="Foto 9">
+            <img src="fotos carrusel/WhatsApp Image 2026-03-01 at 15.41.08.jpeg" alt="Foto 10">
+        </div>
+    </section>
+
+
+    <section class="dresscode-section">
+        <h2>¿QUÉ ME PONGO?</h2>
+        <p>El dress code de la fiesta es <strong>Elegante Sport</strong>.</p>
+    </section>
+
+    <section class="regalos-section">
+        <h2>SI QUERÉS HACERME UN REGALO...</h2>
+        <p><strong>¡El mejor regalo es tu presencia!</strong></p>
+        <p>Pero si deseas hacerme un regalo, te brindo mis datos bancarios:</p>
+        <div class="datos-bancarios">
+            <p><strong>Titular:</strong> Mora Antonella Lopez Herrera</p>
+            <p><strong>Alias:</strong> moraantonellaa</p>
+            <p><strong>Banco:</strong> Mercado Pago</p>
+        </div>
+    </section>
+
+    <section class="upload-section">
+        <h2>COMPARTÍ TUS FOTOS</h2>
+        <p>¡Quiero guardar cada momento!</p>
+        <p>Subí acá las fotos y videos que sacaste durante la fiesta<br>para que queden en mi álbum de recuerdos.</p>
+        
+        <div class="upload-container">
+            <div class="upload-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+            </div>
+            
+            <form id="uploadForm" class="upload-form">
+                <label for="photoInput" class="btn">SELECCIONAR FOTOS</label>
+                <input type="file" id="photoInput" multiple accept="image/*,video/*" style="display: none;">
+                <p id="fileStatus" style="margin-top: 10px; font-size: 0.9em;"></p>
+                <button type="submit" class="btn btn-outline" id="uploadButton" style="display: none; margin-top: 10px;">SUBIR AHORA</button>
+            </form>
+            <div id="loader" style="display: none;">Subiendo...</div>
+            <div id="successMessage" style="display: none; color: green; font-weight: bold;">¡Gracias por compartir!</div>
+        </div>
+    </section>
+
+    <section class="asistencia-section">
+        <h2>CONFIRMACIÓN DE ASISTENCIA</h2>
+        <p>Espero que me acompañes...</p>
+        <p>Te pido que completes este formulario antes del 09/04/2026.<br>Si fuiste invitado/a con un acompañante, completar un formulario por persona.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5a2TPXuqE1Wb_Z_Le9AQp5uvzC-QZ5xVZgeWZP8mPv4NOvg/viewform?usp=header" class="btn"class="btn btn-outline" target="_blank" rel="noopener noreferrer">CONFIRMAR MI ASISTENCIA</a>
+        <br><br>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis+XV+Mora&dates=20260509T200000/20260510T030000&details=%C2%A1Te+espero+para+festejar+mis+15+a%C3%B1os!&location=Salón+Tomás,+Estrada+2306+Villa+Maip%C3%BA&sf=true&output=xml" 
+        class="btn btn-outline" 
+        target="_blank" 
+        rel="noopener noreferrer">AGENDAR LA FIESTA EN MI CALENDARIO</a>
+    </section>
+
+    <footer>
+        <p>Mis XV Mora - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
